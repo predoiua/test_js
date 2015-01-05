@@ -1,0 +1,27 @@
+{
+    "author": "Adrian Predoiu",
+    "name": "test",
+    "version": "1.0.0",
+    "homepage": "",
+    "engines": {
+        "node": "0.8.x",
+        "npm": "1.1.x"
+    },
+    "scripts": {
+        "start": "brunch watch --server",
+        "test": "brunch test"
+    },
+    "directories": {
+        "test": "test"
+    },
+    "license": "MIT",
+    "dependencies": {
+        "clean-css-brunch": "^1.7.1",
+        "coffee-script-brunch": "^1.8.0",
+        "css-brunch": "^1.7.0",
+        "handlebars-brunch": "^1.7.8",
+        "javascript-brunch": "^1.7.1",
+        "less-brunch": "^1.7.2",
+        "uglify-js-brunch": "^1.7.7"
+    }
+}

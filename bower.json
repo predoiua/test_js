@@ -1,0 +1,20 @@
+{
+  "name": "connection",
+  "version": "1.0.0",
+  "description": "Sample application",
+  "moduleType": [
+    "amd"
+  ],
+  "authors": [
+    "Adrian Predoiu"
+  ],
+  "directory":"./",
+  "dependencies": {
+        "backbone":"~1.1.2"
+        ,"marionette":"~2.3.0"
+        ,"bootstrap":"~3.3.1"
+        ,"jquery":"~1.11.2"
+    },
+  "license": "MIT",
+  "private": true
+}

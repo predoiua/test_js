@@ -3,5 +3,5 @@
 var template = require('templates/contentList');
 
 module.exports = Backbone.Marionette.CompositeView.extend({
-    template: template
+  template: template
 });

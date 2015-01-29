@@ -18,6 +18,7 @@ exports.config =
         ]
         after: [
           'test/vendor/scripts/test-helper.js'
+          'vendor/lib/hbs_helper.js'
         ]
 
     stylesheets:

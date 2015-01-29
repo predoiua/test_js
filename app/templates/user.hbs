@@ -1,0 +1,81 @@
+<style type="text/css">
+  .form-signin {
+    max-width: 300px;
+    padding: 19px 29px 29px;
+    margin: 0 auto 20px;
+    background-color: #fff;
+    -webkit-border-radius: 5px;
+       -moz-border-radius: 5px;
+            border-radius: 5px;
+    -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+       -moz-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+            box-shadow: 0 1px 2px rgba(0,0,0,.05);
+    }
+    .form-signin .form-signin-heading,
+    .form-signin .checkbox {
+        margin-bottom: 10px;
+    }
+    .form-signin input[type="text"],
+    form-signin input[type="password"] {
+        font-size: 16px;
+        height: auto;
+        margin-bottom: 15px;
+        padding: 7px 9px;
+    }
+</style>
+<form class="form-horizontal" role="form">
+    <div class="form-group">
+        <div class="col-md-offset-4 col-md-3 control-group">
+            <h2 class="form-signin-heading" data-i18n="interface.user.title">{{i18n "interface.user.title"}}</h2>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-md-4 control-label" for="user" data-i18n="interface.user.name">{{i18n "interface.user.name"}}</label>
+        <div class="col-md-3">
+            <input type="text" class="form-control" value="{{user}}" id="user"/>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-md-4 control-label" for="session_key" data-i18n="interface.user.session_key">{{i18n "interface.user.session_key"}}</label>
+        <div class="col-md-3">
+            <input type="text" class="form-control" value="{{session_key}}" id="session_key"/>
+        </div>
+    </div>
+{{!--
+    <div class="form-group">
+        <label class="col-md-4 control-label" for="schema_code" data-i18n="interface.user.schema_code">{{i18n "interface.user.schema_code"}}</label>
+        <div class="col-md-3">
+            <input type="text" class="form-control" value="{{schema_code}}" id="schema_code"/>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-md-4 control-label" for="com_level" data-i18n="interface.user.com_level">{{i18n "interface.user.com_level"}}</label>
+        <div class="col-md-3">
+            <input type="text" class="form-control" value="{{com_level}}" id="com_level"/>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-md-4 control-label" for="com_code" data-i18n="interface.user.com_code">{{i18n "interface.user.com_code"}}</label>
+        <div class="col-md-3">
+            <input type="text" class="form-control" value="{{com_code}}" id="com_code"/>
+        </div>
+    </div> 
+--}}
+    <div class="control-group form-group">
+        <label class="col-md-4 control-label" for="language" data-i18n="interface.user.language">{{i18n "interface.user.language"}}</label>
+    <div class="col-md-3">
+        <div class="controls">
+            <select id="language" class="form-control">
+                {{#each language_list}}
+                <option value="{{code}}">{{name}}</option>
+                {{/each}}
+            </select>
+        </div>
+    </div>
+    </div>
+    <div class="form-group">
+        <div class="col-md-offset-4 col-md-3 control-group">
+            <button class="btn btn-primary btn-lg btn-block" type="submit" id="submit" data-i18n="interface.user.submit">{{i18n "interface.user.submit"}}</button>
+        </div>
+    </div>
+</form>

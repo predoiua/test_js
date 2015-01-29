@@ -1,0 +1,18 @@
+{
+"interface": {
+      "user": {
+            "title": "User details",
+            "name": "Login Name",
+            "session_key": "Session Key",
+            "schema_code": "Schema Code",
+            "com_level": "Company Level",
+            "com_code":  "Company Code",
+            "language": "Language",
+            "submit": "OK"
+      },
+      "header": {
+            "title": "Conection",
+            "login": "Logged in as"
+      }
+}
+}

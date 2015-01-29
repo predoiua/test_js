@@ -8,7 +8,7 @@ module.exports = Backbone.Model.extend({
   },
   apiRoot : config.api.versionRoot,
   urlPath: function () {
-    return;
+    return '';
   },
   urlRoot: function () {
     return this.apiRoot + this.urlPath();

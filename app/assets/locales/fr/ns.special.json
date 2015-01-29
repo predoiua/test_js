@@ -1,0 +1,18 @@
+{
+"interface": {
+      "user": {
+            "title": "User details(FR)",
+            "name": "Login Name(FR)",
+            "session_key": "Session Key",
+            "schema_code": "Schema Code",
+            "com_level": "Company Level",
+            "com_code":  "Company Code",
+            "language": "Language(FR)",
+            "submit": "OK(FR)"
+      },
+      "header": {
+            "title": "Conection(FR)",
+            "login": "Logged in as(FR)"
+      }
+}
+}

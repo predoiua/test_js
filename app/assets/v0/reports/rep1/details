@@ -1,0 +1,14 @@
+{
+  name : 'Report 1',
+  code : 'rep1',
+  scheduler : {
+    time : {
+      minute : '10',
+      hour : '*',
+      dayOfTheMonth : '10',
+      monthOfTheYear : '1',
+      dayOfTheWeek : '1',
+      year : '*'
+    }
+  }
+}

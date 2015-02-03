@@ -1,4 +1,4 @@
-/*global Marionette*/
+/*global Marionette,Backbone */
 var ReportListView = require('views/reportList');
 var ContentModel = require('models/content');
 var HeaderView = require('views/header');
@@ -8,10 +8,17 @@ module.exports = Marionette.Controller.extend({
   initialize: function (app) {
     this._layout = app._layout;
     this._data = app._data;
+    this.globalCh = Backbone.Wreqr.radio.channel('global');
+    this.globalCh.commands.setHandler('show:message', function (message) {
+      console.log(' I need to display the following message : ' + message);
+    });
   },
   start: function () {
     this._layout.body.show(this._buildReportListView());
     this._layout.header.show(this._buildHeaderView());
+  },
+  report_details: function (code) {
+    console.log("Show report detail for:" + code);
   },
   _buildHeaderView: function () {
     var headerView = new HeaderView({model : this._data.userModel});
@@ -34,5 +41,8 @@ module.exports = Marionette.Controller.extend({
       t._layout.body.show(t._buildReportListView());
     });
     return userView;
+  },
+  _buildReportDetailsView: function () {
+    console.log("_buildReportDetailsView");
   }
 });

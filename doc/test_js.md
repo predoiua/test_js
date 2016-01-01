@@ -1,10 +1,16 @@
-Architecture:
+Create a SPA (Single Page Application)
+======================================
+
+Architecture
+------------
 One page with 4 divs:
 - header
 - footer
 - body
-- message 
+- message
 
+Folders
+-------
 App
 	- contains all global objects : user, current folder
 	- vent
@@ -22,8 +28,8 @@ Router
 	- just entry point
 	
 For now:
-		- no module
-		- no behaviour
+	- no module
+	- no behaviour
 
 1 - Display user details
 	(Send trigger "user:details"
@@ -39,7 +45,7 @@ For now:
 
 4 - warning/error/waiting windows
 	( with behaviour ? - no )
-	I user commands for this. I have a listener in controller on a global channel, it listen for :
+	I use commands for this. I have a listener in controller on a global channel, it listen for :
 		- show:message 
 		- show:warning
 		- show:waiting
@@ -167,7 +173,7 @@ Naming convention
 - user JSList for code validation.
 
 Resources
-=======
+=========
 Set dev env
 https://www.youtube.com/watch?v=2pFL66qXcTE 
 Views
